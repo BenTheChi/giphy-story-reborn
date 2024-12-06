@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Carter+One|Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Giphy Story</title>
+  </head>
+  <header>
+    <h1 class="headline">GIPHY STORY</h1>
+  </header>
+  <body>
+    <div id="story-slides-card">
+      <div
+        class="d-flex content-area text-center align-items-center justify-content-center"
+        id="story-slides"
+      >
+        <button id="left-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-left"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+            />
+          </svg>
+        </button>
+        <iframe
+          src="https://giphy.com/embed/8dYmJ6Buo3lYY"
+          width="50%"
+          height="100%"
+          frameborder="0"
+          class="giphy-embed"
+          id="giphy-embed"
+          allowfullscreen
+        ></iframe>
+        <button id="right-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-right"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+            />
+          </svg>
+        </button>
+      </div>
+      <h3 id="text-area">Welcome to Giphy Story</h3>
+      <button class="btn" id="save-button">Save</button>
+    </div>
+
+    <div id="bottom-container">
+      <div id="form-submit-container">
+        <div id="form-container">
+          <form>
+            <div class="form-group">
+              <label for="storyTitle">Story Title</label>
+              <input
+                type="text"
+                class="form-control"
+                id="storyTitle"
+                placeholder="Example - Happy People: A Tragedy"
+              />
+            </div>
+            <label for="storyBody">Story body</label>
+            <textarea
+              class="form-control"
+              id="storyBody"
+              rows="10"
+              placeholder="Sections are divided by any punctuation or enclosed in parenthesis.  Sections longer than 80 characters are ignored.  Sections in ALL CAPS (usually character names) are images instead of gifs."
+            ></textarea>
+          </form>
+        </div>
+        <button
+          id="submit-button"
+          type="button"
+          class="btn btn-primary position-relative top-0 start-50 translate-middle"
+        >
+          Submit
+        </button>
+      </div>
+      <div id="saved-stories">
+        <h3>Saved Stories</h3>
+        <ul id="story-list"></ul>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+  <footer class="text-center">
+    <a href="#" class="contact-links">Github</a>
+    <a href="#" class="contact-links">About</a>
+    <a href="#" class="contact-links">Contact</a>
+  </footer>
+</html>
