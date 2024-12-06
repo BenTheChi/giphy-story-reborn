@@ -103,7 +103,7 @@ async function buildSlides(sections) {
 
     try {
       const response = await fetch(
-        `http://api.giphy.com/v1/gifs/search?q=${section
+        `https://api.giphy.com/v1/gifs/search?q=${section
           .split(" ")
           .join("+")}&api_key=${API_KEY}&limit=1`
       );
